@@ -1,21 +1,2 @@
 <!-- START CREDLY BADGES -->
 <!-- END CREDLY BADGES -->
-.github/workflows/credly-badges.yml.
-name: Update Credly Badges
-on:
-  schedule:
-    - cron: '0 0 * * *' # Updates automatically every night at midnight
-  workflow_dispatch: # Allows you to update it manually right now
-
-permissions:
-  contents: write
-
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Update Credly Badges
-        uses: jd-35656/readme-credly-badges@v1
-        with:
-          credly_username: 'garima-singh.c645cf3f'
-          github_token: ${{ secrets.GITHUB_TOKEN }}
