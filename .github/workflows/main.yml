@@ -1,0 +1,22 @@
+name: Update Credly Badges
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs automatically every night
+  workflow_dispatch: # Allows you to run it manually right now
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Credly Badge README Updater
+        uses: Sagargupta16/credly-badge-readme-action@v1.0.0
+        with:
+          credly-username: 'garima-singh'
+          readme-path: 'README.md'
+          badge-size: 100
