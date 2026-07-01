@@ -17,6 +17,6 @@ jobs:
       - name: Credly Badge README Updater
         uses: Sagargupta16/credly-badge-readme-action@v1.0.0
         with:
-          credly-username: 'garima-singh'
+          credly-username: 'garima-singh.c645cf3f'
           readme-path: 'README.md'
           badge-size: 100
