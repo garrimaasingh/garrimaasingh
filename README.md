@@ -17,5 +17,5 @@ jobs:
       - name: Update Credly Badges
         uses: jd-35656/readme-credly-badges@v1
         with:
-          credly_username: 'garima-singh'
+          credly_username: 'garima-singh.c645cf3f'
           github_token: ${{ secrets.GITHUB_TOKEN }}
